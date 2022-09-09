@@ -4,11 +4,24 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
     //ENTRADA
-
-
+const n1 = Number(prompt("Informe o número"));
+const n2 = Number(prompt("Informe o número"));
+const n3 = Number(prompt("Informe o número"));
     //PROCESSAMENTO
-
+if (n1 > n2 && n2 > n3) {
+    ordem = [n1 , n2 , n3];
+}else if (n2 > n1 && n1 > n3){
+    ordem = [n2 , n1 , n3];
+}else if (n3 > n1 && n1 > n2){
+    ordem[n3 , n1 , n2];
+}else if (n1 > n3 && n3 > n2){
+    ordem[n1 , n3 , n2];
+}else if (n2 > n3 &&  n3 > n1){
+    ordem[n2 , n3 , n1];
+}else{
+    ordem = [n3 , n2 , n1]
+}
 
     //SAÍDA
-
+document.write(`${ordem}`)
 </script>
