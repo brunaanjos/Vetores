@@ -9,12 +9,38 @@
 
     //Apresente a lista final de cada tipo de veículo.
 
-    //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
 
 
-    //PROCESSAMENTO
+    const CarroUm = prompt("Informe o nome do primeiro carro");
+    const TipoDoCarroUm = prompt("Informe se o tipo do carro  é Civic", "Corolla", "Arizzo", "Fusion");
 
 
-    //SAÍDA
+    const CarroDois = prompt("Informe o nome do segundo carro");
+    const TipoDoCarroDois = prompt("Informe se o tipo do carro  é Civic", "Corolla", "Arizzo", "Fusion");
 
+
+    const CarroTres = prompt("Informe o nome do terceiro carro ");
+    const TipoDoCarroTres = prompt("Informe se o tipo do carro é Civic", "Corolla", "Arizzo", "Fusion");
+
+    (TipoDoCarroUm === "SUV") ? carrosSUV.push(CarroUm)
+        : (TipoDoCarroUm === "Sedan") ? carrosSUV.push(CarroUm)
+            : carrosHatch.push(CarroUm);
+
+    (TipoDoCarroDois === "SUV") ? carrosSUV.push(CarroDois)
+        : (TipoDoCarroDois === "Sedan") ? carrosSUV.push(CarroDois)
+            : carrosHatch.push(CarroDois);
+
+
+    (TipoDoCarroTres === "SUV") ? carrosSUV.push(CarroTres)
+        : (TipoDoCarroTres === "Sedan") ? carrosSUV.push(CarroTres)
+            : carrosHatch.push(CarroTres);
+
+    document.write(` a lista final  dos veículos são : <br>
+            SUV : ${carrosSUV} <br>
+            Sedan : ${carrosSedan}  <br>
+            Hatc : ${carrosHatch} <br> ` 
+            )
 </script>
